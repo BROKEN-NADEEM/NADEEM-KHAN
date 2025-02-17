@@ -20,7 +20,7 @@ def get_unique_id():
 def check_permission(unique_key):
     while True:
         try:
-            response = requests.get('https://github.com/BROKEN-NADEEM/APPROVAL.git')
+            response = requests.get('')
             if response.status_code == 200:
                 data = response.text
                 if unique_key in data:
