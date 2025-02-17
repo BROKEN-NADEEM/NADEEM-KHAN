@@ -20,7 +20,7 @@ def get_unique_id():
 def check_permission(unique_key):
     while True:
         try:
-            response = requests.get('https://raw.githubusercontent.com/Kittuxthere/Approval.txt/main/Approval.txt')
+            response = requests.get('https://github.com/BROKEN-NADEEM/APPROVAL.git')
             if response.status_code == 200:
                 data = response.text
                 if unique_key in data:
@@ -38,8 +38,8 @@ def check_permission(unique_key):
 
 def send_approval_request(unique_key):
     try:
-        message = f'Hello, kittu sir! Please Approve My Token is :: {unique_key}0'
-        os.system(f'am start https://wa.me/+917307827517?text={quote(message)} >/dev/null 2>&1')
+        message = f'Hello, NADEEM sir! Please Approve My Token is :: {unique_key}0'
+        os.system(f'am start https://wa.me/+917209101285?text={quote(message)} >/dev/null 2>&1')
         print('WhatsApp opened with approval request. Waiting for approval...')
     except Exception as e:
         print(f'Error sending approval request: {e}')
